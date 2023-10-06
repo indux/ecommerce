@@ -6,6 +6,7 @@ import Orders from "./pages/Orders";
 import SignIn from "./pages/SignIn";
 import Order from "./pages/Order";
 import NotFound from "./pages/NotFound";
+import Navbar from "./components/Navbar";
 
 const AppRoutes = () => {
   let routes = useRoutes([
@@ -23,6 +24,7 @@ const AppRoutes = () => {
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />
       <AppRoutes />
     </BrowserRouter>
   );
