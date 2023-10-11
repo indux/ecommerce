@@ -7,7 +7,9 @@ import Orders from "./pages/Orders";
 import SignIn from "./pages/SignIn";
 import Order from "./pages/Order";
 import NotFound from "./pages/NotFound";
-import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import ProductDetail from "./components/ProductDetail";
+import CheckoutSideMenu from "./components/CheckoutSideMenu";
 
 const AppRoutes = () => {
   let routes = useRoutes([
@@ -26,8 +28,10 @@ function App() {
   return (
     <ShoppingCartProvider>
       <BrowserRouter>
-        <Navbar />
+        <Header />
         <AppRoutes />
+        <ProductDetail />
+        <CheckoutSideMenu />
       </BrowserRouter>
     </ShoppingCartProvider>
   );

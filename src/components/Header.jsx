@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { ShoppingBagIcon } from "@heroicons/react/24/solid";
 import { ShoppingCartContext } from "../context/Context";
 
-function NavBar() {
+function Header() {
   const context = useContext(ShoppingCartContext);
   const activeStyle = "underline underline-offset-4";
 
@@ -98,4 +98,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default Header;
