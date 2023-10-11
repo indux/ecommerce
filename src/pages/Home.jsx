@@ -19,7 +19,7 @@ function Home() {
     <Layout>
       <h1>Home</h1>
       <section className="grid gap-4 grid-cols-4 w-full max-w-screen-lg">
-        {items?.map((item) => (
+        {items?.slice(0, 40).map((item) => (
           <Card key={item.id} data={item} /> 
         ))}
       </section>
